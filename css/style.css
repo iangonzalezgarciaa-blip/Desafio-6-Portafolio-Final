@@ -940,3 +940,110 @@ section {
 section {
     transition: background-color 0.3s ease;
 }
+/* ===== ESTILOS PORTAFOLIO ===== */
+.portfolio-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(26, 58, 82, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(26, 58, 82, 0.2);
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    background: linear-gradient(135deg, #1a3a52 0%, #0d1f2d 100%);
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 58, 82, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-content h5 {
+    color: #1a3a52;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.portfolio-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tech-tags .badge {
+    background-color: #1a3a52 !important;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio-card {
+    animation: fadeInUp 0.6s ease-out both;
+}
+
+.portfolio-card:nth-child(1) { animation-delay: 0.1s; }
+.portfolio-card:nth-child(2) { animation-delay: 0.2s; }
+.portfolio-card:nth-child(3) { animation-delay: 0.3s; }
+.portfolio-card:nth-child(4) { animation-delay: 0.4s; }
