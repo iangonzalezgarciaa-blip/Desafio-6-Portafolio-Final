@@ -1,4 +1,12 @@
-/* Variables de Color - Elegante Legal */
+/**
+ * PORTAFOLIO PROFESIONAL - ESTILOS PERSONALIZADOS
+ * Autor: Ian González García
+ * Descripción: Estilos para CV y portafolio personal
+ * Framework: Bootstrap 5.3.0
+ * Última actualización: Enero 2026
+ */
+
+/* ===== VARIABLES DE COLOR - TEMA LEGAL ELEGANTE ===== */
 :root {
     --primary-dark: #1a3a52;
     --primary-light: #2d5a7b;
@@ -10,6 +18,7 @@
     --border-color: #e8e6e1;
 }
 
+/* ===== RESET Y DEFAULTS ===== */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +36,7 @@ body {
     background-color: #fefdfb;
 }
 
-/* Sección Hero Elegante */
+/* ===== SECCIÓN HERO ELEGANTE ===== */
 .hero-section-elegante {
     background: linear-gradient(135deg, #1a3a52 0%, #0d1f2d 100%);
     min-height: 650px;

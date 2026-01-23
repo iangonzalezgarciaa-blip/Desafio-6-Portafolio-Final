@@ -1,0 +1,27 @@
+# Archivos del sistema y de desarrollo
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Node (si se usa en futuro)
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Compilados
+*.css.map
+*.js.map
+
+# Archivos temporales
+temp/
+tmp/
+*.temp
